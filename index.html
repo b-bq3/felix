@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فيلكس — Felix</title>
+<meta name="description" content="فيلكس: مساعد ذكي عربي يعيش على تيليجرام — بوت، مواقع، وأدوات. بوابة مشاريعه ومصادر التوثيق الرسمية.">
+<meta property="og:title" content="فيلكس — Felix">
+<meta property="og:description" content="مساعد ذكي عربي + منظومة بوتات ومواقع">
+<meta name="theme-color" content="#0a0f1e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230a0f1e'/><text x='32' y='44' font-size='34' text-anchor='middle' fill='%234f8cff' font-family='monospace' font-weight='bold'>F</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,'Segoe UI',Tahoma,sans-serif;background:#070b16;color:#dbe4ff;line-height:1.7;min-height:100vh}
+.bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(700px 400px at 80% -10%,rgba(79,140,255,.16),transparent),radial-gradient(600px 400px at 10% 110%,rgba(120,80,255,.12),transparent),linear-gradient(#070b16,#0a1122)}
+.wrap{max-width:920px;margin:0 auto;padding:48px 20px 80px}
+mark{background:none;font-weight:800;font-size:1.5rem;letter-spacing:.5px;color:#fff;font-family:monospace}
+.pill{display:inline-block;font-size:.78rem;border:1px solid #2a375c;border-radius:99px;padding:3px 12px;color:#8fa8ff;margin-bottom:14px}
+h1{font-size:2.6rem;background:linear-gradient(90deg,#7db0ff,#b48aff,#7db0ff);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:10px}
+.sub{color:#93a4cc;max-width:640px;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0 34px}
+.card{background:rgba(20,30,58,.55);border:1px solid #22304f;border-radius:16px;padding:20px;transition:.2s}
+.card:hover{border-color:#4f8cff;transform:translateY(-2px)}
+.card h3{color:#fff;font-size:1.05rem;margin-bottom:6px}
+.card p{color:#93a4cc;font-size:.9rem}
+.card a{display:inline-block;margin-top:10px;color:#7db0ff;text-decoration:none;font-size:.88rem;font-weight:600}
+.card a:hover{text-decoration:underline}
+h2{font-size:1.35rem;color:#fff;margin:38px 0 4px;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:22px;height:3px;background:linear-gradient(90deg,#7db0ff,#b48aff);border-radius:2px}
+.hint{color:#6d7fa8;font-size:.85rem;margin-bottom:12px}
+.docs{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px}
+.doc{display:block;background:rgba(20,30,58,.45);border:1px solid #1d2a4a;border-radius:11px;padding:11px 14px;color:#c3d0f2;text-decoration:none;font-size:.87rem;transition:.15s}
+.doc:hover{border-color:#4f8cff;color:#fff}
+.doc span{display:block;color:#6d7fa8;font-size:.75rem;margin-top:2px}
+footer{margin-top:52px;padding-top:18px;border-top:1px solid #1b2745;color:#6d7fa8;font-size:.82rem}
+footer a{color:#7db0ff;text-decoration:none}
+@media(max-width:560px){h1{font-size:2rem}.wrap{padding:32px 16px 60px}}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="wrap">
+<span class="pill">v3.7 — يعيش على Cloudflare Workers</span>
+<mark>FELIX</mark>
+<h1>مساعدك الذكي العربي</h1>
+<p class="sub">فيلكس — منظومة متكاملة: بوت تيليجرام بموديلات AI حية، بحث عربي بأربع طبقات، أدوات متصلة، ومواقع ماين كرافت. كلها مبنية وتُدار سحابياً.</p>
+
+<div class="grid">
+<div class="card"><h3>🤖 بوت تيليجرام</h3><p>دردشة عراقية ذكية + بحث حي + أدوات — أكثر من 120 موديل من 4 مزودات عبر أمر /model.</p><a href="https://t.me/U0_0BOT">t.me/U0_0BOT</a></div>
+<div class="card"><h3>🌐 vlxai</h3><p>الموقع الرئيسي: مدونة تقنية عربية ونشر محتوى بذوق فيليكس.</p><a href="https://vlxai.pages.dev">vlxai.pages.dev</a></div>
+<div class="card"><h3>⛏️ ZoXa Addons</h3><p>مكتبة إضافات ماين كرافت بيدروك وجافا — تحزين دائم ومزامنة تلقائية من أشهر المصادر.</p><a href="https://zoxa.pages.dev">zoxa.pages.dev</a></div>
+</div>
+
+<h2>مصادر التوثيق الرسمية</h2>
+<p class="hint">روابط مباشرة للوثائق الرسمية للمصادر التي تعمل عليها منظومة فيليكس.</p>
+<div class="docs">
+<a class="doc" href="https://core.telegram.org/bots/api">Telegram Bot API<span>تيليجرام الرسمي</span></a>
+<a class="doc" href="https://developers.cloudflare.com/workers/">Cloudflare Workers<span>بيئة تشغيل البوت</span></a>
+<a class="doc" href="https://developers.cloudflare.com/pages/">Cloudflare Pages<span>استضافة المواقع</span></a>
+<a class="doc" href="https://vercel.com/docs">Vercel<span>النشر والسيرفرليس</span></a>
+<a class="doc" href="https://docs.github.com/">GitHub<span>المستودعات والصفحات</span></a>
+<a class="doc" href="https://api.imgur.com/">Imgur API<span>رفع الصور</span></a>
+<a class="doc" href="https://developers.composio.com/">Composio<span>ربط الأدوات والتطبيقات</span></a>
+<a class="doc" href="https://api.hashnode.com/">Hashnode API<span>نشر المدونات</span></a>
+<a class="doc" href="https://discord.com/developers/docs">Discord API<span>تطبيقات ديسكورد</span></a>
+<a class="doc" href="https://api.slack.com/docs">Slack API<span>بوتات سلاك</span></a>
+<a class="doc" href="https://developers.google.com/drive">Google Drive<span>واجهة درايف</span></a>
+<a class="doc" href="https://developers.google.com/sheets/api">Google Sheets<span>واجهة الجداول</span></a>
+<a class="doc" href="https://firebase.google.com/docs">Firebase<span>قواعد بيانات جوكل</span></a>
+<a class="doc" href="https://docs.stripe.com/api">Stripe API<span>المدفوعات</span></a>
+<a class="doc" href="https://developer.paypal.com/api/rest/">PayPal API<span>المدفوعات</span></a>
+<a class="doc" href="https://docs.aws.amazon.com/">AWS<span>خدمات أمازون</span></a>
+<a class="doc" href="https://docs.digitalocean.com/">DigitalOcean<span>سحابة DO</span></a>
+<a class="doc" href="https://docs.netlify.com/">Netlify<span>استضافة جاتل</span></a>
+<a class="doc" href="https://devcenter.heroku.com/">Heroku<span>منصات قديمة</span></a>
+<a class="doc" href="https://supabase.com/docs">Supabase<span>قواعد بيانات مفتوحة</span></a>
+</div>
+
+<footer>
+صُنع بإدارة <a href="https://t.me/U0_0BOT">فيلكس</a> — 2026 · استضافة مجانية بـSSL تلقائي
+</footer>
+</div>
+</body>
+</html>
